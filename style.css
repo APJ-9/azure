@@ -3,7 +3,7 @@ body{
     margin: 0;
     padding: 0;
     background-color: whitesmoke;
-    /* 1A1A1F */
+    /* #1A1A1F */
 }
 .nav-white{
     background-color: white;
@@ -11,33 +11,83 @@ body{
 .nav-white .elements{
     display: flex;
     align-items: center;
+    justify-content: space-between;
     height: 78px;
     padding: 0 20px;
 
 }
 .nav-white .elements .left-open{
     display: flex;
+    position: relative;
+    align-items: flex-end;
+    padding-left: 5px;
+    max-width: min-content;
+    /* background-color: aqua; */
 }
 .m3-line{
-    width: 25px;
+    width: 20px;
     height: 2px;
-    background-color: black;
+    background-color: #1A1A1F;
     margin: 4px 0;
 }
+.nav-white .left-open p{
+    position: relative;
+    /* top: 2px; */
+    margin: 0;
+    padding-left: 16px;
+    font-size: 16px;
+    font-weight: 800;
+    /* background-color: red; */
+}
+.nav-white .logo{
+    height: 30px;
+    width: 30px;
+    padding-left: 30px;
+    /* margin: 0 auto; */
+}
+.nav-white .right-mobile{
+    display: flex;
+    /* padding: 10px; */
+    /* background-color: yellow; */
+}
+.nav-white .right-mobile img{
+    width: 16px;
+    height: 16px;
+    padding: 20px 0;
+    /* margin-right: 10px; */
+    margin-right: 40px;
+    /* background-color: red; */
+}
+.nav-white .sign-in{
+    /* background-color: aqua; */
+    padding: 20px 0;
+    display: block;
+    /* padding-left: 20px; */
+    font-size: 14px;
+}
+
 .nav-white .elements .left-close{
     display: none;
+    /* HAVE TO EDIT PENDING WORK */
 }
-.nav-white .elements .logo{
-    margin: 0 auto;
-    /* background-color: lightcoral; */
-}
-.nav-white .elements .right{
-    background-color: lightblue;
-}
+
+
 .nav-blue{
     background-color: #0078D4;
+    display: flex;
+    /* align-items: center; */
+    height: 67px;
+}
+.nav-blue .elements{
+    padding: 8px 24px;
+    /* border: 3px solid white; */
+    margin: 5px;
 }
 .nav-blue .elements p{
-    padding: 0;
     margin: 0;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.4;
 }
