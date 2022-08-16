@@ -275,6 +275,8 @@ body{
     padding: 20px 0;
     border-radius: 4px;
     box-shadow: #0000001a 0px 4px 6px -1px, #0000000f 0px 2px 4px -1px;
+    margin-bottom: 12px;
+    /* background-color: azure; */
     
 }
 .element-aps .element-aps-list span{
@@ -291,3 +293,72 @@ details summary{
     list-style: none;
 }
 
+.elements-hide-containers{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 1rem;
+    justify-content: space-between;
+    /* background-color: azure; */
+}
+.container-elements{
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 4px;
+    box-shadow: #0000001a 0px 4px 6px -1px, #0000000f 0px 2px 4px -1px;
+    padding: 30px  20px ;
+    justify-content: center;
+    background-color: white;
+    margin: 10px 0;
+}
+
+.container-elements img{
+    height: 40px;
+    width: 40px;
+    /* padding: 0 50px; */
+    /* background-color: #DADEE2; */
+}
+
+.azure-products-and-services .container-elements p{
+    text-align: center;
+    line-height: 1.4;
+    font-size: 14px;
+    color: #636268;
+    /* background-color: antiquewhite; */
+}
+
+.container-elements h4{
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    font-size: 14px;
+    color: #0062AD;
+}
+
+.azure-products-and-services p{
+    color: #0062AD;
+    text-align: center;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    /* background-color: antiquewhite; */
+}
+.azure-products-and-services .lap-img{
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 44px;
+    margin-bottom: 64px;
+
+}
+.azure-products-and-services .lap-img img{
+    box-shadow: 0 10px 20px rgba(0,0,0,.14);
+    width: 80%;
+    border: 8px solid black;
+    border-radius: 8px;
+}
+
+
+.slide-show-section{
+    background-color: white;
+}
