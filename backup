@@ -82,6 +82,7 @@
     </section>
 
     <div class="sticky">hai</div>
+    <!-- sticky is not included in the mobile design -->
 
     <section class="on-pre-hybrid">
       <h4>
