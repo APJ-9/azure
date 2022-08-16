@@ -592,8 +592,6 @@
               </div>
             </details>
           </li>
-
-
         </ul>
       </div>
 
@@ -604,67 +602,114 @@
     </section>
 
     <section class="slide-show-section">
-      <div class="heading">
-          <h5>Find out how these customers are innovating with Azure</h5>
-
-          <div class="slide-show">
-              <img src="img/logo1.svg" alt="logo">
-              <img src="img/slide1.webp" alt="image">
-              <p>Turn 10 Studios created a turbocharged gaming architecture for Forza Horizon 5 using Azure Kubernetes Service (AKS) and other Azure services.
-              </p>
-              <a href="#">Case study ></a>
-          </div>
-
-          <div class="slide-show">
-            <img src="img/logo2.svg" alt="logo">
-            <img src="img/slide2.webp" alt="image">
-            <p>Northumbria Healthcare NHS Foundation Trust is helping patients understand surgical risks with personalized profiles created with Azure Machine Learning and the Responsible AI Dashboard.
+      <h5>Find out how these customers are innovating with Azure</h5>
+      <div class="slide-show-container">
+        <div class="slide-show">
+          <img src="img/logo1.svg" alt="logo" />
+          <img src="img/slide1.webp" class="image-slide" />
+          <div class="text">
+            <p>
+              Turn 10 Studios created a turbocharged gaming architecture for
+              Forza Horizon 5 using Azure Kubernetes Service (AKS) and other
+              Azure services.
             </p>
             <a href="#">Case study ></a>
+          </div>
         </div>
 
         <div class="slide-show">
-          <img src="img/logo3.svg" alt="logo">
-          <img src="img/slide3.webp" alt="image">
-          <p>Northumbria Healthcare NHS Foundation Trust is helping patients understand surgical risks with personalized profiles created with Azure Machine Learning and the Responsible AI Dashboard.
-          </p>
-          <a href="#">Case study ></a>
+          <img src="img/logo2.svg" alt="logo" />
+          <img src="img/slide2.webp" class="image-slide" />
+          <div class="text">
+            <p>
+              Northumbria Healthcare NHS Foundation Trust is helping patients
+              understand surgical risks with personalized profiles created with
+              Azure Machine Learning and the Responsible AI Dashboard.
+            </p>
+            <a href="#">Case study ></a>
+          </div>
+        </div>
+
+        <div class="slide-show">
+          <img src="img/logo3.svg" alt="logo" />
+          <img src="img/slide3.webp" class="image-slide" />
+          <div class="text">
+            <p>
+              To expand the possibilities for innovative fan experiences and
+              streamline day-to-day operations, the NBA migrated its SAP
+              solutions and other IT resources to Azure.
+            </p>
+            <a href="#">Case study ></a>
+          </div>
+        </div>
+
+        <div class="slide-show">
+          <img src="img/logo4.svg" alt="logo" />
+          <img src="img/slide4.webp" class="image-slide" />
+          <div class="text">
+            <p>
+              American Cancer Society kept resources flowing to patients and
+              researchers during the global pandemic by transitioning their
+              infrastructure to Azure.
+            </p>
+            <a href="#">Case study ></a>
+          </div>
+        </div>
+
+        <div class="slide-show">
+          <img src="img/logo5.svg" alt="logo" />
+          <img src="img/slide5.webp" class="image-slide" />
+          <div class="text">
+            <p>
+              PepsiCo uses Azure Machine Learning to identify consumer shopping
+              trends and provide actionable, store-level insights.
+            </p>
+            <a href="#">Case study ></a>
+          </div>
+        </div>
+
+        <div class="slide-show">
+          <img src="img/logo6.svg" alt="logo" />
+          <img src="img/slide6.webp" class="image-slide" />
+          <div class="text">
+            <p>
+              GE Digital helps pilots make the skies safer with data and
+              analytics provided through its FlightPulse app—built using the
+              open-source .NET platform.
+            </p>
+            <a href="#">Case study ></a>
+          </div>
+        </div>
+        <div class="slide-show-dot">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <span class="dot" onclick="currentSlide(6)"></span>
+        </div>
       </div>
+    </section>
 
-      <div class="slide-show">
-        <img src="img/logo4.svg" alt="logo">
-        <img src="img/slide4.webp" alt="image">
-        <p>Northumbria Healthcare NHS Foundation Trust is helping patients understand surgical risks with personalized profiles created with Azure Machine Learning and the Responsible AI Dashboard.
-        </p>
-        <a href="#">Case study ></a>
-      </div>
+    <!-- SECTION SLIDE-SHOW COMPLETED EXPECT THE ANIMATION -->
 
-      <div class="slide-show">
-        <img src="img/logo5.svg" alt="logo">
-        <img src="img/slide5.webp" alt="image">
-        <p>Northumbria Healthcare NHS Foundation Trust is helping patients understand surgical risks with personalized profiles created with Azure Machine Learning and the Responsible AI Dashboard.
-        </p>
-        <a href="#">Case study ></a>
-      </div>
-
-      <div class="slide-show">
-        <img src="img/logo6.svg" alt="logo">
-        <img src="img/slide6.webp" alt="image">
-        <p>Northumbria Healthcare NHS Foundation Trust is helping patients understand surgical risks with personalized profiles created with Azure Machine Learning and the Responsible AI Dashboard.
-        </p>
-        <a href="#">Case study ></a>
-    </div>
-
-
+    <section class="accelerate-your">
+      <div class="container">
+          <img src="img/accelerate.webp" alt="image">
+          <h5>Accelerate your migration and modernization with Azure</h5>
+          <div class="btn">
+              <p>Explore help and tools</p>
+          </div>
       </div>
   </section>
 
-    <div style="height: 1500px; width: 100%; background-color:grey;"></div>
+
+    <div style="height: 1500px; width: 100%; background-color: grey"></div>
 
     <script>
-      console.log([...document.querySelectorAll("details")]);
+      // console.log([...document.querySelectorAll("details")]);
       var details = [...document.querySelectorAll("details")];
-      console.log(details);
+      // console.log(details);
       document.addEventListener("click", function (e) {
         if (!details.some((f) => f.contains(e.target))) {
           details.forEach((f) => f.removeAttribute("open"));
@@ -675,6 +720,29 @@
           );
         }
       });
+
+      let slideIndex =1;
+      showSlides(slideIndex);
+
+      function currentSlide(n){
+        showSlides(slideIndex=n);
+      }
+
+      function showSlides(n){
+        let i;
+        let slides = document.getElementsByClassName("slide-show");
+        let dots = document.getElementsByClassName("dot");
+        if(n>slides.length){slideIndex=1}
+        if(n<1){slideIndex=slides.length}
+        for(i=0;i<slides.length;i++){
+          slides[i].style.display="none";
+        }  
+        for(i=0;i<dots.length;i++){
+          dots[i].className = dots[i].className.replace("active","");
+        }
+        slides[slideIndex-1].style.display ="block";
+        dots[slideIndex-1].className += " active";
+      }
     </script>
   </body>
 </html>
