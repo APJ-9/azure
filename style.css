@@ -436,7 +436,7 @@ details summary{
 
 .accelerate-your{
     display: block;
-    padding-top: 80px;
+    padding: 80px 0;
     background-color: #F8F9FA;
 }
 .accelerate-your .container{
@@ -448,4 +448,208 @@ details summary{
 .accelerate-your .container img{
     /* margin: 0 auto; */
     width: 70%;
+}
+
+.accelerate-your .container h5{
+    text-align: center;
+    padding: 28px 36px;
+    padding-bottom: 0px;
+    margin: 0;
+    line-height: 1.3;
+    font-size: 36px;
+    /* background-color: yellowgreen; */
+}
+
+.accelerate-your .container .btn p{
+    color: #0062AD;
+    border-radius: 4px;
+    border-width: 1px;
+    border-style: solid;
+    padding: 12px 40px;
+    font-size: 14px;
+}
+.discover{
+    background-color: white;
+    margin: 0;padding-top: 88px;
+}
+.discover h4{
+    margin: 0;
+    text-align: center;
+    font-size: 20px;
+    padding: 0 20px;
+    padding-bottom: 24px;
+    
+}
+.discover-slider{
+    /* background-color: yellowgreen; */
+    padding: 8px 0;
+    /* display: blocfk; */
+}
+
+.discover-slider .discover-card{
+    background: white;
+    flex: 1;
+    margin: 10px;
+    width: 240px;
+    height: 280px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,.14);    
+}
+
+.discover-slider .discover-card .img{
+    max-height: 50%;
+    max-width: 100%;
+}
+.discover-slider .discover-card .img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 6px 6px 0 0;
+}
+.discover-slider .discover-card .content{
+    padding:12px;
+    /* margin: 0; */
+}
+.discover-card .content p{
+    margin: 0;
+    padding: 12px 0;
+    font-size: 12px;
+    font-weight: 600;
+    color: #636268;
+}
+.discover-card .content a{
+    text-decoration: none;
+    color: #2E2E33;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.video-section{
+    display: block;
+}
+.video-section-elements{
+    display: none;
+}
+
+.video-section-outside{
+    display: block;
+}
+.video-section-outside .outside-container{
+    display: inline;
+    /* padding: 10px 0; */
+}
+
+.video-section-outside .outside-container .container-element{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    border-radius: 8px;
+    padding: 20px 8px;
+    background-color: #243A5E;
+}
+.video-section-outside .outside-container .voc-2{
+    background-color: #242429;
+}
+.video-section-outside .outside-container .voc-3{
+    background-color: #0062AD;
+}
+.video-section-outside .outside-container .container-element img{
+    height: 14%;
+    width: 14%;
+    margin: 0 20px;
+}
+.video-section-outside .outside-container .container-element h4{
+    color: #DADEE2;
+    font-size: 20px;
+    margin: 0;
+}
+.video-section-outside .outside-container .container-element p{
+    display: none;
+}
+footer{
+    margin: 0 16px;
+}
+.social-media-section{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.social-media-section .get-azure{
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #EAEBEC;
+    height: 48px;
+    min-width: 200px;
+    padding: 0 10px;
+}
+.social-media-section .get-azure svg{
+    height: 20px;
+    /* padding: 10px; */
+}
+.social-media-section .get-azure p{
+    margin: 0;
+    padding-left: 12px;
+    color: #4C4C51;
+}
+.social-media-section .social-media{ 
+    /* position: relative; */
+    display: flex;
+    /* padding: 0; */
+    align-items: center;
+    height: 48px;
+    min-width: 200px;
+    /* border-radius: 4px; */
+    /* background-color: yellow; */
+}
+
+.social-media-section .social-media svg{
+    height: 20px;
+    width: 20px;
+    padding: 0 12px;
+}
+
+.footer-list-container .list{
+    display: flex;
+    border-radius: 4px;
+    background-color: #EAEBEC;
+    padding-left: 20px;
+    padding-right: 32px;
+    margin: 28px 0;
+    font-size: 14px;
+    font-weight: 500;
+    justify-content: space-between;
+}
+footer .lang{
+    /* background-color: yellow; */
+    margin:24px 0;
+    padding: 14px 0;
+}
+
+footer .lang p{
+    font-size: 12px;
+}
+
+footer .lang select{
+    padding: 8px;
+    border-radius: 0px;
+    background-color: white;
+    min-width: 200px;
+}
+
+footer .copyright{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+}
+
+footer .copyright span{
+    font-size: 12px;
+    padding: 14px;
+}
+
+footer .copyright .cr-ms-22{
+    font-weight: 600;
 }
