@@ -288,9 +288,7 @@ body {
 details > summary {
   list-style: none;
 }
-details > summary ::-o-disclosure {
-  content: "";
-}
+
 
 .elements-hide-containers {
   display: grid;
