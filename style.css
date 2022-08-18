@@ -289,10 +289,10 @@ body{
     padding: 0 20px;
     font-weight: 600;
 }
-details summary{
+details>summary{
     list-style: none;
 }
-details summary ::-webkit-details-maker{
+details>summary ::-webkit-details-maker{
     display: none;
 }
 
