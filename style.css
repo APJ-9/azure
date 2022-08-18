@@ -292,6 +292,9 @@ body{
 details summary{
     list-style: none;
 }
+details summary ::-webkit-details-maker{
+    display: none;
+}
 
 .elements-hide-containers{
     display: grid;
