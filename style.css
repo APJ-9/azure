@@ -486,6 +486,7 @@ details > summary {
 .discover-slider-container {
   position: relative;
   height: 400px;
+  margin: 0 10px;
 }
 .discover-slider {
   position: absolute;
@@ -493,7 +494,7 @@ details > summary {
   top: 0%;
   width: 99%;
   height: 300px;
-  overflow: hidden;
+  overflow: scroll;
   /* z-index: 34; */
 }
 .discover-slider-inner {
