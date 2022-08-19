@@ -489,9 +489,9 @@ details > summary {
 }
 .discover-slider {
   position: absolute;
-  left: 1%;
-  top: 1%;
-  width: 100%;
+  left: 0%;
+  top: 0%;
+  width: 99%;
   height: 300px;
   overflow: hidden;
   /* z-index: 34; */

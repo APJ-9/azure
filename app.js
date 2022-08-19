@@ -1,6 +1,5 @@
 let slider = document.querySelector('.discover-slider');
-let innerSlider = document.querySelector('discover-slider-inner');
-
+let innerSlider = document.querySelector('.discover-slider-inner');
 let pressed = false;
 let startx;
 let x;
