@@ -146,7 +146,7 @@ body {
   margin: 0 40px;
   margin-bottom: 20px;
   width: 100%;
-  max-width: 600px;
+  /* max-width: 600px; */
 }
 
 .banner-btns .get-btn {
@@ -497,6 +497,9 @@ details > summary {
   overflow: scroll;
   /* z-index: 34; */
 }
+.discover-slider::-webkit-scrollbar{
+  display: none;
+}
 .discover-slider-inner {
   position: absolute;
   top: 0;
@@ -772,10 +775,17 @@ footer .copyright .cr-ms-22 {
     background-image: url("https://azurecomcdn.azureedge.net/cvt-022c6b3f5aa15dd5aabc3c381fef132a77ef2d97aecee219f30198d4ea83c327/images/page/home/hero-desktop.webp");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 30% 50%;
+    background-position: 50% 50%;
   }
   .banner .elements {
     /* background-color: #0062ad; */
+    margin: 0;
+    padding: 48px 16px;
+    max-width: 50%;
+  }
+  .banner .elements h2{
+    max-width: 80%;
+    padding-top: 12px;
   }
   .banner .img {
     display: none;
@@ -831,4 +841,21 @@ footer .copyright .cr-ms-22 {
     /* font-weight: 600; */
     /* min-width: 100px; */
   }
+  
+}
+
+@media screen and (min-width:1280px) {
+  .banner{
+    height: 666px;
+  }
+  .element-container{
+      /* background-color: saddlebrown; */
+      max-width: 1320px;
+      margin: auto;
+  }
+  .banner .elements{
+    /* background-color: darkred; */
+  
+  }
+  
 }
