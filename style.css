@@ -295,7 +295,7 @@ body {
   font-weight: 600;
 }
 details > summary {
-  list-style: none;
+  display: block;
 }
 
 .elements-hide-containers {
@@ -807,7 +807,9 @@ footer .copyright .cr-ms-22 {
     display: block;
     line-height: 1.5;
   }
-  
+  .element-aps-list i{
+    display: none;
+  }
 
 }
 
