@@ -951,7 +951,7 @@ footer .copyright .cr-ms-22 {
     max-width: 1320px;
     height: auto;
     width: 100%;
-    background-color: red;
+    /* background-color: red; */
     margin: 0 auto;
     /* padding: 10px; */
   }
@@ -985,7 +985,7 @@ footer .copyright .cr-ms-22 {
     background: white;
     margin: 0;
     width: auto;
-    height: 280px;
+    height: auto;
     border-radius: 6px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.14);
   }
@@ -1027,17 +1027,22 @@ footer .copyright .cr-ms-22 {
     /* background-attachment: local; */
     background-size: cover;
     background-position: 0%;
+    display: grid;
+    align-content: space-between;
+    /* display: grid; */
   }
 
   .discover-slider .card-5 {
     background-image: url(img/d5.webp);
     /* background-attachment: local; */
     background-size: cover;
+    display: grid;
+    align-content: space-between;
   }
-
   .discover-slider .card-5 img,
   .discover-slider .card-3 img {
     display: none;
+    opacity: 0;
   }
 
   .discover-slider .card-5 p,
@@ -1047,9 +1052,10 @@ footer .copyright .cr-ms-22 {
 
   .discover-slider .card-5 a,
   .discover-slider .card-3 a {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
     color: azure;
+    /* background-color: yellow; */
   }
 }
 
@@ -1108,6 +1114,24 @@ footer .copyright .cr-ms-22 {
 
   .banner .img {
     display: none;
+  }
+  .discover-slider-inner {
+    grid-template-columns: auto auto auto auto;
+  }
+  .discover-slider .card-3{
+    grid-column-start: 3;
+    grid-column-end: 5;
+  }
+  .discover-slider .card-5{
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+  .discover-slider .discover-card .content{
+    /* display: flex; */
+    /* height: 100%; */
+    padding: 20px 12px;
+    /* background-color: darksalmon; */
+
   }
 }
 
