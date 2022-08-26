@@ -13,6 +13,18 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
   <!-- <script src="script.js"></script> -->
+  <script>
+    $(document).ready(function () {
+      $(".content .radio_content").hide();
+      $(".content .radio_content:first-child").show();
+
+      $(".radio_wrap").click(function () {
+        let current_radio = $(this).attr("data-radio");
+        $(".content .radio_content").hide();
+        $("." + current_radio).show();
+      });
+    });
+  </script>
 </head>
 
 <body>
@@ -176,9 +188,11 @@
   <!-- SECTION ON-PRE-HYBRID COMPLETED ALL DESIGNS MOBILE TAB LAPTOP-->
 
   <section class="azure-products-and-services">
+    <div class="azure-products-and-services-container">
     <h4>
       Start putting your ideas into action with Azure products and services
     </h4>
+
     <div class="list">
       <ul>
         <li>
@@ -633,10 +647,451 @@
       </ul>
     </div>
 
-    <p>See all products (200+) ></p>
+
+    <div class="wrapper list-768">
+      
+      <div class="element-aps-container radio_tabs">
+
+        <label for="" class="radio_wrap" data-radio="radio_1">
+          <input type="radio" name="sports" class="input" />
+          <p class="radio_mar"> Popular </p>
+        </label>
+
+        <label for="" class="radio_wrap" data-radio="radio_2">
+          <input type="radio" name="sports" class="input" />
+          <p class="radio_mar"> AI + machine learning </p>
+        </label>
+
+        <label for="" class="radio_wrap" data-radio="radio_3">
+          <input type="radio" name="sports" class="input" />
+          <p class="radio_mar"> Compute </p>
+        </label>
+
+        <label for="" class="radio_wrap" data-radio="radio_4">
+          <input type="radio" name="sports" class="input" />
+          <p class="radio_mar"> Containers </p>
+        </label>
+
+        <label for="" class="radio_wrap" data-radio="radio_5">
+          <input type="radio" name="sports" class="input" />
+          <p class="radio_mar"> Hybrid + multicloud </p>
+        </label>
+
+        <label for="" class="radio_wrap" data-radio="radio_6">
+          <input type="radio" name="sports" class="input" />
+          <p class="radio_mar"> Internet of Things (IoT) </p>
+        </label>
+
+        <p>See all products (200+) ></p>
+
+
+      </div>
+
+      <div class="elements_hide_containers-parent content">
+
+        <div class="radio_content radio_1">
+
+          <div class="container-elements">
+            <img src="img/a1.svg" alt="image" />
+            <div class="info">
+              <p>
+                Share code, track work, and ship software with modern dev
+                services
+              </p>
+              <h4>Azure DevOps</h4>
+            </div>
+          </div>
+
+          <div class="container-elements">
+            <img src="img/a2.svg" alt="image" />
+            <div class="info">
+              <p>
+                Unify on-premises, hybrid, and cross-cloud infrastructure
+              </p>
+              <h4>Azure Arc</h4>
+            </div>
+          </div>
+
+          <div class="container-elements">
+            <img src="img/a3.svg" alt="image" />
+            <div class="info">
+              <p>
+                Maximize the business value of data with unified data
+                governance
+              </p>
+              <h4>Microsoft Purview</h4>
+            </div>
+          </div>
+
+          <div class="container-elements">
+            <img src="img/a4.svg" alt="image" />
+            <div class="info">
+              <p>
+                Strengthen security for multicloud and hybrid environments
+              </p>
+              <h4>Microsoft Defender for Cloud</h4>
+            </div>
+          </div>
+
+          <div class="container-elements">
+            <img src="img/a5.svg" alt="image" />
+            <div class="info">
+              <p>Make and scale apps with managed Kubernetes</p>
+              <h4>Azure Kubernetes Service (AKS)</h4>
+            </div>
+          </div>
+
+          <div class="container-elements">
+            <img src="img/a6.svg" alt="image" />
+            <div class="info">
+              <p>
+                Simplify data protection with built-in backup management
+                at scale
+              </p>
+              <h4>Azure Backup</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="radio_content radio_2">
+
+
+          <div class="container-elements">
+            <img src="img/a2.svg" alt="image" />
+            <div class="info">
+              <p>
+                Unify on-premises, hybrid, and cross-cloud infrastructure
+              </p>
+              <h4>Azure Arc</h4>
+            </div>
+          </div>
+
+          <div class="container-elements">
+            <img src="img/a3.svg" alt="image" />
+            <div class="info">
+              <p>
+                Maximize the business value of data with unified data
+                governance
+              </p>
+              <h4>Microsoft Purview</h4>
+            </div>
+          </div>
+
+          <div class="container-elements">
+            <img src="img/a4.svg" alt="image" />
+            <div class="info">
+              <p>
+                Strengthen security for multicloud and hybrid environments
+              </p>
+              <h4>Microsoft Defender for Cloud</h4>
+            </div>
+          </div>
+
+          <div class="container-elements">
+            <img src="img/a5.svg" alt="image" />
+            <div class="info">
+              <p>Make and scale apps with managed Kubernetes</p>
+              <h4>Azure Kubernetes Service (AKS)</h4>
+            </div>
+          </div>
+
+          <div class="container-elements">
+            <img src="img/a6.svg" alt="image" />
+            <div class="info">
+              <p>
+                Simplify data protection with built-in backup management
+                at scale
+              </p>
+              <h4>Azure Backup</h4>
+            </div>
+          </div>
+
+          <div class="container-elements">
+            <img src="img/a1.svg" alt="image" />
+            <div class="info">
+              <p>
+                Share code, track work, and ship software with modern dev
+                services
+              </p>
+              <h4>Azure DevOps</h4>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="radio_content radio_3">
+
+
+          <div class="container-elements">
+            <img src="img/a3.svg" alt="image" />
+            <div class="info">
+              <p>
+                Maximize the business value of data with unified data
+                governance
+              </p>
+              <h4>Microsoft Purview</h4>
+            </div>
+          </div>
+
+          <div class="container-elements">
+            <img src="img/a4.svg" alt="image" />
+            <div class="info">
+              <p>
+                Strengthen security for multicloud and hybrid environments
+              </p>
+              <h4>Microsoft Defender for Cloud</h4>
+            </div>
+          </div>
+
+          <div class="container-elements">
+            <img src="img/a5.svg" alt="image" />
+            <div class="info">
+              <p>Make and scale apps with managed Kubernetes</p>
+              <h4>Azure Kubernetes Service (AKS)</h4>
+            </div>
+          </div>
+
+          <div class="container-elements">
+            <img src="img/a6.svg" alt="image" />
+            <div class="info">
+              <p>
+                Simplify data protection with built-in backup management
+                at scale
+              </p>
+              <h4>Azure Backup</h4>
+            </div>
+          </div>
+
+          <div class="container-elements">
+            <img src="img/a1.svg" alt="image" />
+            <div class="info">
+              <p>
+                Share code, track work, and ship software with modern dev
+                services
+              </p>
+              <h4>Azure DevOps</h4>
+            </div>
+          </div>
+
+          <div class="container-elements">
+            <img src="img/a2.svg" alt="image" />
+            <div class="info">
+              <p>
+                Unify on-premises, hybrid, and cross-cloud infrastructure
+              </p>
+              <h4>Azure Arc</h4>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="radio_content radio_4">
+
+
+          <div class="container-elements">
+            <img src="img/a4.svg" alt="image" />
+            <div class="info">
+              <p>
+                Strengthen security for multicloud and hybrid environments
+              </p>
+              <h4>Microsoft Defender for Cloud</h4>
+            </div>
+          </div>
+
+          <div class="container-elements">
+            <img src="img/a5.svg" alt="image" />
+            <div class="info">
+              <p>Make and scale apps with managed Kubernetes</p>
+              <h4>Azure Kubernetes Service (AKS)</h4>
+            </div>
+          </div>
+
+          <div class="container-elements">
+            <img src="img/a6.svg" alt="image" />
+            <div class="info">
+              <p>
+                Simplify data protection with built-in backup management
+                at scale
+              </p>
+              <h4>Azure Backup</h4>
+            </div>
+          </div>
+
+          <div class="container-elements">
+            <img src="img/a1.svg" alt="image" />
+            <div class="info">
+              <p>
+                Share code, track work, and ship software with modern dev
+                services
+              </p>
+              <h4>Azure DevOps</h4>
+            </div>
+          </div>
+
+          <div class="container-elements">
+            <img src="img/a2.svg" alt="image" />
+            <div class="info">
+              <p>
+                Unify on-premises, hybrid, and cross-cloud infrastructure
+              </p>
+              <h4>Azure Arc</h4>
+            </div>
+          </div>
+
+          <div class="container-elements">
+            <img src="img/a3.svg" alt="image" />
+            <div class="info">
+              <p>
+                Maximize the business value of data with unified data
+                governance
+              </p>
+              <h4>Microsoft Purview</h4>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="radio_content radio_5">
+
+          <div class="container-elements">
+            <img src="img/a5.svg" alt="image" />
+            <div class="info">
+              <p>Make and scale apps with managed Kubernetes</p>
+              <h4>Azure Kubernetes Service (AKS)</h4>
+            </div>
+          </div>
+
+          <div class="container-elements">
+            <img src="img/a6.svg" alt="image" />
+            <div class="info">
+              <p>
+                Simplify data protection with built-in backup management
+                at scale
+              </p>
+              <h4>Azure Backup</h4>
+            </div>
+          </div>
+
+          <div class="container-elements">
+            <img src="img/a1.svg" alt="image" />
+            <div class="info">
+              <p>
+                Share code, track work, and ship software with modern dev
+                services
+              </p>
+              <h4>Azure DevOps</h4>
+            </div>
+          </div>
+
+          <div class="container-elements">
+            <img src="img/a2.svg" alt="image" />
+            <div class="info">
+              <p>
+                Unify on-premises, hybrid, and cross-cloud infrastructure
+              </p>
+              <h4>Azure Arc</h4>
+            </div>
+          </div>
+
+          <div class="container-elements">
+            <img src="img/a3.svg" alt="image" />
+            <div class="info">
+              <p>
+                Maximize the business value of data with unified data
+                governance
+              </p>
+              <h4>Microsoft Purview</h4>
+            </div>
+          </div>
+
+          <div class="container-elements">
+            <img src="img/a4.svg" alt="image" />
+            <div class="info">
+              <p>
+                Strengthen security for multicloud and hybrid environments
+              </p>
+              <h4>Microsoft Defender for Cloud</h4>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="radio_content radio_6">
+
+
+          <div class="container-elements">
+            <img src="img/a6.svg" alt="image" />
+            <div class="info">
+              <p>
+                Simplify data protection with built-in backup management
+                at scale
+              </p>
+              <h4>Azure Backup</h4>
+            </div>
+          </div>
+
+          <div class="container-elements">
+            <img src="img/a1.svg" alt="image" />
+            <div class="info">
+              <p>
+                Share code, track work, and ship software with modern dev
+                services
+              </p>
+              <h4>Azure DevOps</h4>
+            </div>
+          </div>
+
+          <div class="container-elements">
+            <img src="img/a2.svg" alt="image" />
+            <div class="info">
+              <p>
+                Unify on-premises, hybrid, and cross-cloud infrastructure
+              </p>
+              <h4>Azure Arc</h4>
+            </div>
+          </div>
+
+          <div class="container-elements">
+            <img src="img/a3.svg" alt="image" />
+            <div class="info">
+              <p>
+                Maximize the business value of data with unified data
+                governance
+              </p>
+              <h4>Microsoft Purview</h4>
+            </div>
+          </div>
+
+          <div class="container-elements">
+            <img src="img/a4.svg" alt="image" />
+            <div class="info">
+              <p>
+                Strengthen security for multicloud and hybrid environments
+              </p>
+              <h4>Microsoft Defender for Cloud</h4>
+            </div>
+          </div>
+
+          <div class="container-elements">
+            <img src="img/a5.svg" alt="image" />
+            <div class="info">
+              <p>Make and scale apps with managed Kubernetes</p>
+              <h4>Azure Kubernetes Service (AKS)</h4>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="lap-img">
+        <img src="img/laptop.png" alt="laptop" />
+      </div>
+    </div>
+
     <div class="lap-img">
       <img src="img/laptop.png" alt="laptop" />
     </div>
+  </div>
   </section>
 
   <section class="slide-show-section">
@@ -958,13 +1413,13 @@
         <p>Explore Azure</p>
         <p class="plus-footer">+</p>
         <div class="list-item-footer">
-        <span>  What is Azure?</span>
-        <span>  Get started</span>
-        <span>  Global infrastructure</span>
-        <span>  Trust your cloud</span>
-        <span>  Customer enablement</span>
-        <span>  Customer stories</span>
-        <span>  Datacentre regions</span>
+          <span> What is Azure?</span>
+          <span> Get started</span>
+          <span> Global infrastructure</span>
+          <span> Trust your cloud</span>
+          <span> Customer enablement</span>
+          <span> Customer stories</span>
+          <span> Datacentre regions</span>
 
         </div>
       </div>
@@ -972,13 +1427,13 @@
         <p>Products and pricing</p>
         <p class="plus-footer">+</p>
         <div class="list-item-footer">
-          <span>  Products  </span>
-          <span>  Pricing </span>
-          <span>  Free Azure services </span>
-          <span>  Flexible purchase options </span>
-          <span>  Cloud economics </span>
-          <span>  Optimise your costs </span>
-          
+          <span> Products </span>
+          <span> Pricing </span>
+          <span> Free Azure services </span>
+          <span> Flexible purchase options </span>
+          <span> Cloud economics </span>
+          <span> Optimise your costs </span>
+
         </div>
       </div>
       <div class="list">
@@ -986,11 +1441,11 @@
         <p class="plus-footer">+</p>
         <div class="list-item-footer">
 
-          <span>  Solutions </span>
-          <span>  Resources for COVID-19  </span>
-          <span>  Solution architectures  </span>
-          <span>  Support </span>
-          <span>  Azure demo and live Q&A </span>
+          <span> Solutions </span>
+          <span> Resources for COVID-19 </span>
+          <span> Solution architectures </span>
+          <span> Support </span>
+          <span> Azure demo and live Q&A </span>
 
 
         </div>
@@ -1000,9 +1455,9 @@
         <p class="plus-footer">+</p>
         <div class="list-item-footer">
 
-          <span>  Azure Marketplace </span>
-          <span>  Find a partner  </span>
-          <span>  Technology partners </span>
+          <span> Azure Marketplace </span>
+          <span> Find a partner </span>
+          <span> Technology partners </span>
 
         </div>
       </div>
@@ -1011,15 +1466,15 @@
         <p class="plus-footer">+</p>
         <div class="list-item-footer">
 
-          <span>  Training and certifications </span>
-          <span>  Documentation </span>
-          <span>  Updates </span>
-          <span>  Blog  </span>
-          <span>  Developer resources </span>
-          <span>  Students  </span>
-          <span>  Events and webinars </span>
-          <span>  Analyst reports, white papers and e-books </span>
-          <span>  Videos  </span>
+          <span> Training and certifications </span>
+          <span> Documentation </span>
+          <span> Updates </span>
+          <span> Blog </span>
+          <span> Developer resources </span>
+          <span> Students </span>
+          <span> Events and webinars </span>
+          <span> Analyst reports, white papers and e-books </span>
+          <span> Videos </span>
 
 
         </div>
@@ -1029,13 +1484,13 @@
         <p class="plus-footer">+</p>
         <div class="list-item-footer">
 
-          <span>  What is machine learning? </span>
-          <span>  What is the cloud?  </span>
-          <span>  What is Big Data Analytics  </span>
-          <span>  What is PaaS? </span>
-          <span>  What is a container?  </span>
-          <span>  What is DevOps? </span>
-          
+          <span> What is machine learning? </span>
+          <span> What is the cloud? </span>
+          <span> What is Big Data Analytics </span>
+          <span> What is PaaS? </span>
+          <span> What is a container? </span>
+          <span> What is DevOps? </span>
+
         </div>
       </div>
     </div>
@@ -1074,20 +1529,20 @@
     </div>
 
     <div class="copyright">
-    <div class="copy-container"> 
-      <span>Diversity and Inclusion</span>
-      <span>Accessibility</span>
-      <span>Privacy & Cookies</span>
-      <span>Data Protection Notice</span>
-      <span>Trademarks</span>
-      <span>Terms of use</span>
-      <span>Privacy Data Management</span>
-      <span>Contact us</span>
-      <span>Feedback</span>
-      <span>Sitemap</span>
-      <span class="cr-ms-22">© Microsoft 2022</span>
+      <div class="copy-container">
+        <span>Diversity and Inclusion</span>
+        <span>Accessibility</span>
+        <span>Privacy & Cookies</span>
+        <span>Data Protection Notice</span>
+        <span>Trademarks</span>
+        <span>Terms of use</span>
+        <span>Privacy Data Management</span>
+        <span>Contact us</span>
+        <span>Feedback</span>
+        <span>Sitemap</span>
+        <span class="cr-ms-22">© Microsoft 2022</span>
+      </div>
     </div>
-  </div>
   </footer>
 
   <script>

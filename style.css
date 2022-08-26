@@ -275,6 +275,10 @@ body {
   background-color: #f8f9fa;
 }
 
+.azure-products-and-services .list-768 {
+  display: none;
+}
+
 .azure-products-and-services h4 {
   margin: 0;
   padding: 0 12px;
@@ -728,9 +732,11 @@ footer {
   font-weight: 500;
   justify-content: space-between;
 }
-.footer-list-container .list-item-footer{
+
+.footer-list-container .list-item-footer {
   display: none;
 }
+
 footer .lang {
   /* background-color: yellow; */
   margin: 24px 0;
@@ -747,6 +753,7 @@ footer .lang select {
   background-color: white;
   min-width: 200px;
 }
+
 footer .copy-container {
   display: flex;
   flex-wrap: wrap;
@@ -1092,6 +1099,74 @@ footer .copyright .cr-ms-22 {
     /* padding-top: 22px; */
     /* background-color: yellow; */
   }
+
+  .azure-products-and-services .list {
+    display: none;
+  }
+
+  .azure-products-and-services h4 {
+    text-align: left;
+  }
+
+  .azure-products-and-services .list-768 {
+    display: flex;
+
+  }
+
+  input[type="radio"] {
+    /* display: none; */
+    opacity: 0;
+    /* visibility: hidden; */
+  }
+
+  .list-768 .element-aps-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* background-color: rebeccapurple; */
+    padding: 0 12px;
+    /* padding-top: 12px; */
+  }
+
+  .list-768 .element-aps-container p {
+    text-align: left;
+    min-width: 182px;
+    /* border-left: 2px solid #0062ad; */
+    padding: 0 12px;
+    padding-bottom: 32px;
+    font-weight: 600;
+    /* margin: 12px 0; */
+    /* background: rebeccapurple; */
+
+  }
+
+  .list-768 .elements_hide_containers-parent .radio_content {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 15px;
+  }
+
+  .list-768 .elements_hide_containers-parent .radio_content {
+    padding: 10px;
+  }
+
+  .list-768 .elements_hide_containers-parent .radio_content .container-elements {
+    min-width: 100px;
+  }
+
+  .list-768 .elements_hide_containers-parent .container-elements .info p {
+    padding-top: 24px;
+    line-height: 1.8;
+  }
+
+  .list-768 .elements_hide_containers-parent .container-elements .info h4 {
+    padding-top: 24px;
+    text-align: center;
+  }
+
+  .azure-products-and-services .lap-img {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 769px) {
@@ -1178,6 +1253,18 @@ footer .copyright .cr-ms-22 {
     margin: 0 auto;
   }
 
+  .azure-products-and-services{
+    width: 100%;
+  }
+  .azure-products-and-services-container{
+    max-width: 1320px;
+    margin: 0 auto;
+  }
+
+  .azure-products-and-services .list-768 .lap-img {
+    display: none;
+  }
+
   .video-section-outside .outside-container {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -1196,7 +1283,8 @@ footer .copyright .cr-ms-22 {
     margin: 0 auto;
     padding: 0 20px;
   }
-  .footer-list-container .list-item-footer{
+
+  .footer-list-container .list-item-footer {
     display: block;
   }
 
@@ -1207,7 +1295,8 @@ footer .copyright .cr-ms-22 {
     padding: 12px;
     margin: 0;
   }
-  footer .list p{
+
+  footer .list p {
     font-weight: 600;
   }
 
