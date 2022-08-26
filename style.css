@@ -1170,6 +1170,10 @@ footer .copyright .cr-ms-22 {
     height: 48px;
     margin: 0;
   }
+  footer{
+    max-width: 1320px;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (min-width: 1080px) {
