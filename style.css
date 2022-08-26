@@ -424,6 +424,9 @@ details>summary {
 .slide-show-container {
   position: relative;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .slide-show img {
@@ -470,13 +473,14 @@ details>summary {
   padding-bottom: 80px;
   justify-content: space-between;
   /* background-color: yellow; */
+  min-width: 300px;
 }
 
 .slide-show-dot .dot {
   cursor: pointer;
   height: 8px;
   width: 8px;
-  margin: 0 2px;
+  margin: 0 20px;
   background-color: #2e2e33;
   border-radius: 50%;
   display: inline-block;
