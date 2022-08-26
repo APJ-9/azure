@@ -747,12 +747,18 @@ footer .lang select {
   background-color: white;
   min-width: 200px;
 }
+footer .copy-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  max-width: 950px;
+}
 
 footer .copyright {
   display: flex;
   flex-wrap: wrap;
   justify-content: right;
-  background-color: darksalmon;
+  /* background-color: darksalmon; */
 }
 
 footer .copyright span {
